@@ -17,10 +17,12 @@ class AlbumList extends Component {
   }
 
   renderAlbums() {
+    // loop through all albums and map key/value pairs
     return this.state.albums.map(album =>
       //each component inside the array must have a key property
       //how React keeps track of re-rerenders and only updates the correct key
-      <AlbumDetail key={album.title} album={album} />
+      //album prop passes entire album object down to AlbumDetail
+        <AlbumDetail key={album.title} album={album} />
       );
   }
 

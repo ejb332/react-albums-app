@@ -17,4 +17,6 @@ const App = () => (
 
 // Render it to the device
 // Only the root component uses "AppRegistry"
+// first argument must match name of root folder
+// second argument must match name of root component w/ implicit return
 AppRegistry.registerComponent('albums', () => App);
